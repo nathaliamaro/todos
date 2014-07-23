@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>app II</title>
+</head>
+
+<body>
+
+<form id="hey">
+	<input type="text" id="new_name" placeholder="Tu nombre aqui"/>
+	<button type="submit">send</button>
+
+</form>
+
+</body>
+
+<script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#hey').submit (function (e){
+			alert($("#new_name").val());
+		})
+	});
+</script>
+
+
+</html>
